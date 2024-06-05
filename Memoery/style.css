@@ -1,0 +1,17 @@
+#main{
+    width: 770px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #eee;
+    overflow: hidden;
+    
+}
+div{
+    float: left;
+    background: url(images-images/mom.jpeg);
+    margin:5px;
+    cursor: pointer;
+}
+img{
+    opacity: 0;
+}

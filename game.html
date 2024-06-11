@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
@@ -66,9 +69,10 @@
                 <img src="images/game_1.jpg" class="logo">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="Games">Services</a></li>
+                        
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about_us">About Us</a></li>
+                        <li><a href="#Games">Games</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -96,20 +100,46 @@
             </div>
         </div>
     </div>
-    <div class="about_us">
+   
+    <section id="about_us">
         
             <fieldset>
                 <legend><h1>Ocean of Games 🎮</h1></legend>
             <p><span>Ocean of Games</span> contains the best selection of free online games and offers the most enjoyable experience to play alone or with friends. We offer instant play on all of our games with no downloads, logins, pop-ups, or anything else distracting. Our games can be played on desktops, tablets and mobile phones, so you can enjoy them at home or on the go. Every month, more than 60 million players from all over the world play their favorite games on<span>Ocean of Games</span>.</p>
             </fieldset>
-    </div>
+    </section>
+    <secttion id="fourmulair">
+        <div class="center">
+            <div class="btns">
+                <button class="a1" >Sign up</button>
+                <button class="a2">Log in</button>
+            </div>
+            <div class="signup-form">
+                <div class="header">Signup for free</div>
+                <form action="">
+                    <input type="text"   placeholder="Firstname">
+                    <input class="lstnme" type="text"   placeholder="Lastname">
+                    <input class="email" type="text"   placeholder="Email or Phone">
+                    <input class="email" type="password"   placeholder="Password">
+                    <input class="sign-sub" type="submit" value="Sign up" >
+                </form>
+            </div>
+            <div class="login-form">
+                <div class="header1">Login for free</div>
+                <form action="">
+                    <input class="email" type="text"   placeholder="Email or Phone">
+                    <input class="email" type="password"   placeholder="Password">
+                    <input class="log-sub" type="submit" value="Login" >
+                </form>
+            </div>
+        </div>
+    </secttion>
     <section id="Games">
         <div class="container1">
             <div class="title">
                 <h2> Play Now</h2>
                 <p> X_O & Memoery & Build a Flappy Bird </p>
             </div>
-
             <div class="Games-game">
                 <div class="game1">
                     <div>
@@ -137,35 +167,54 @@
             </div>
         </div>
     </section>
-    <div class="content-1">
-           
+     
+    <section id="gallery">
+            <div class="container" align="center">
+            <div class="content-all">
+            <div class="content-carrousel">
+            <figure><img src="images/img11.jpg"></figure>
+            <figure><img src="images/img21.jpg"></figure>
+            <figure><img src="images/img24.jpg"></figure>
+            <figure><img src="images/img27.jpg"></figure>
+            <figure><img src="images/img22.jpg"></figure>
+            <figure><img src="images/img13.jpg"></figure>
             
-           
-            <div class="content">
-                <div class="box-1">
-                    <img src="images/img20.jpg" alt="nom" class="img" onmouseover="clickImg(this.src)">
-                    <img src="images/img21.jpg" alt="nom" class="img img1" onmouseover="clickImg(this.src)">
-                    <img src="images/img22.jpg" alt="nom" class="img" onmouseover="clickImg(this.src)">
-                    <img src="images/img23.jpg" alt="nom" class="img" onmouseover="clickImg(this.src)">
-                </div>
-            
-                <div class="container-1">
-                    <img src="images/img25.jpg" alt="nom" name="nom" class="nowImg">
-                </div>
-            
-                <div class="box-2">
-                    <img src="images/img24.jpg" alt="nom" class="img img1" onmouseover="clickImg1(this.src)">
-                    <img src="images/img25.jpg" alt="nom" class="img img1" onmouseover="clickImg1(this.src)">
-                    <img src="images/img26.jpg" alt="nom" class="img img1" onmouseover="clickImg1(this.src)">
-                    <img src="images/img27.jpg" alt="nom" class="img img1" onmouseover="clickImg1(this.src)">
-                </div>
             </div>
-        
+            </div>
+            </div>
+    </section>
+    <section id="footer">
+        <div class="footer-footer"> 
+            <div>
+                <h3>FOLLOW ME</h3>
+                <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" ><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
-    </div>
+</section>
+   
     
-
-
     <script src="game.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

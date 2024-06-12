@@ -117,7 +117,7 @@ nav ul li a{
     max-width: 300px;
     position: relative;
     margin: auto;
-    transform: translate(50%);
+    transform: translate(50%); 
     bottom: 250px;
     left: 150px;
 }
@@ -174,11 +174,14 @@ p span{
     color: #de786e;
 }
 
+
+
 #Games{
-    height: 550px;
+    margin-bottom: 100px;
+    height: 600px;
     display: flex;
     justify-content: center;
-    background:white center center/cover fixed no-repeat;
+    background:#97baee center center/cover fixed no-repeat;
 
 }
 .title {
@@ -219,7 +222,7 @@ p span{
 .Games-game .game2 .button-btn{
     display: inline-block;
     margin-top: 20px;
-    background-color:#de786e;
+    background-color:#97baee;
     color:black;
     padding: 15px 20px;
     border: 2px solid white;
@@ -346,48 +349,118 @@ form input[type="submit"]:hover{
 }
 
 
-/* Footer */
 
-#footer{
-    height: 400px;
-    background: rgb(166, 166, 212);
-}
-#footer .footer-footer{
+
+
+/* gallery */
+
+#gallery{
+    width: 100%;
     height: 100%;
+    background-color: #97baee;
+}
+#gallery .gallery-img{
+   
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
-#footer .footer-footer h3{
-    font-size: 25px;
-    color: black;
-    margin-bottom: 10px ;
-    font-style: italic;
-    text-shadow: 3px 3px 4px blue;
+#gallery .gallery-img img{
+    width: 350px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px brown;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
 }
-#footer .footer-footer i{
-    color:blue ;
-    margin-right: 5px;
+#gallery .gallery-img img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
 }
-#footer .footer-footer a i{
-    color: aliceblue;
-    background-color:black ;
-    padding: 15px;
+
+/* Footer */
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
     border-radius: 50%;
-    font-size: 20px;
 }
-#footer .footer-footer a .fa-facebook:hover {
-    background: rgb(52, 52, 117);
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
 }
-#footer .footer-footer a .fa-whatsapp:hover{
-    background: rgb(20, 173, 20);
-
-} 
-#footer .footer-footer a .fa-instagram:hover{
-    background-image: linear-gradient(red,rgb(236, 88, 137) );
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
 }
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.7;
+    transition: 0.5s;
 
-
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
 
 
 

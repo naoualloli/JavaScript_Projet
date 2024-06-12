@@ -52,4 +52,7 @@ var gallery=document.getElementById("gallery");
     login_link.style.background = "#34495e";
   }
 
+
+  ///////g
+
   

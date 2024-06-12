@@ -86,6 +86,9 @@ nav ul li a{
     font-size: larger;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+nav ul li a:hover{
+    border-bottom: 2px solid #de786e;
+}
 .row{
     width: 80%;
     min-height: 85vh;
@@ -129,7 +132,7 @@ nav ul li a{
 .gallery-box ul {
     position: absolute;
     right: -100px;
-    top: 60%;
+    top: 42%;
     transform: translate(-50%);
 }
 .gallery-box ul li {
@@ -145,6 +148,11 @@ nav ul li a{
 .gallery-box ul li:hover{
     color: black;
 }
+
+
+
+
+
 
 /* about_us */
 #about_us{
@@ -197,9 +205,15 @@ p span{
     font-style: italic;
     text-shadow: 4px 4px 5px blue;
 }
+h2 span{
+    color: white;
+}
  .title p{
     color:black;
     font-weight: 500;
+}
+.title p span{
+    color: white;
 }
 .Games-game .game1{
     width: 300px;
@@ -322,7 +336,8 @@ form input.email{
     margin-top: 20px;
     
 }
-form input[type="submit"]{
+form .sign-sub ,
+form .log-sub{
     margin: 30px 0 40px 35px;
     width: 445px;
     height: 50px;
@@ -332,7 +347,12 @@ form input[type="submit"]{
     background: #2981bc;
     border: 1px solid #2573a7;
 }
-form input[type="submit"]:hover{
+form .sign-sub:hover{
+    background: #2990d1;
+    transition: .5s;
+}
+
+form .log-sub:hover{
     background: #2990d1;
     transition: .5s;
 }
@@ -348,7 +368,11 @@ form input[type="submit"]:hover{
     display: none;
 }
 
+/* js form */
 
+.error{
+    border: solid red;
+}
 
 
 
@@ -358,6 +382,7 @@ form input[type="submit"]:hover{
     width: 100%;
     height: 100%;
     background-color: #97baee;
+    margin-bottom: 100px;
 }
 #gallery .gallery-img{
    
@@ -401,6 +426,10 @@ form input[type="submit"]:hover{
     font-size: 2em;
     color: black;
     opacity: 0,9;
+}
+hr{
+    width: 1100px;
+    color: black;
 }
 /* Hover affect on social media icon */
 .socialIcons a:hover{
@@ -465,6 +494,49 @@ form input[type="submit"]:hover{
 
 
 
+
+@media screen and (max-width : 600px){
+    .content-1{
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: black;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 70px 40px;
+    }
+    .navbar ul li{
+        margin: 20px 0px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gallery-box{
+        display: flex;
+        flex-direction: column;
+    }
+    #about_us{
+        height: 180vh;
+    }
+    .center{
+        width: 490px;
+    }
+    #Games{
+        height: 1200px;
+    }
+
+}
 
 
 

@@ -53,6 +53,63 @@ var gallery=document.getElementById("gallery");
   }
 
 
+  
+
+  document.getElementById("submit").addEventListener("click",function(e){
+    e.preventDefault();
+    let firstname = document.getElementById("firstname").value;
+    if(firstname === ''){
+      document.getElementById("firstname").classList.add("error");
+    }else{
+      document.getElementById("firstname").classList.remove("error");
+    }
+
+    let lastname = document.getElementById("lstnme").value;
+    if(lastname === ''){
+      document.getElementById("lstnme").classList.add("error");
+    }else{
+      document.getElementById("lstnme").classList.remove("error");
+    }
+
+    let email = document.getElementById("email").value;
+    if(email === ''){
+      document.getElementById("email").classList.add("error");
+    }else{
+      document.getElementById("email").classList.remove("error");
+    }
+
+    let pass = document.getElementById("password").value;
+    if(pass === ''){
+      document.getElementById("password").classList.add("error");
+    }else{
+      document.getElementById("password").classList.remove("error");
+    }
+
+  });
+  document.getElementById("submit2").addEventListener("click",function(e){
+    e.preventDefault();
+    let email2 = document.getElementById("email2").value;
+    if(email2 === ''){
+      document.getElementById("email2").classList.add("error");
+    }else{
+      document.getElementById("email2").classList.remove("error");
+    }
+
+    let pass = document.getElementById("password2").value;
+    if(pass === ''){
+      document.getElementById("password2").classList.add("error");
+    }else{
+      document.getElementById("password2").classList.remove("error");
+    }
+
+
+
+
+  });
+
+
+
+
   ///////g
 
   

@@ -14,6 +14,7 @@ var gallery=document.getElementById("gallery");
     }
 
 
+ 
     
 
 
@@ -50,3 +51,5 @@ var gallery=document.getElementById("gallery");
     signup_link.style.background = "#2981bc";
     login_link.style.background = "#34495e";
   }
+
+  

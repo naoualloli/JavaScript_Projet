@@ -47,6 +47,8 @@ body{
     }
 }
 
+/* header */
+
 .container{
     min-height: 100vh;
     position: relative;
@@ -150,11 +152,8 @@ nav ul li a:hover{
 }
 
 
-
-
-
-
 /* about_us */
+
 #about_us{
     position: relative;
     width: 100%;
@@ -182,95 +181,7 @@ p span{
     color: #de786e;
 }
 
-
-
-#Games{
-    margin-bottom: 100px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    background:#97baee center center/cover fixed no-repeat;
-
-}
-.title {
-    text-align: center;
-    margin-bottom: 4rem;
-    margin-top: 50px;
-}
-
- h2{
-    font-size: 40px;
-    margin-bottom: 20px;
-    color:black;
-    font-style: italic;
-    text-shadow: 4px 4px 5px blue;
-}
-h2 span{
-    color: white;
-}
- .title p{
-    color:black;
-    font-weight: 500;
-}
-.title p span{
-    color: white;
-}
-.Games-game .game1{
-    width: 300px;
-    height: 300px;
-    position: relative; 
-}
-.Games-game img{
-    width: 300px;
-    height: 300px;
-    border-radius: 15px;
-}
-.Games-game .game2{
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    position: absolute;
-    top: 200px;
-    border-radius: 15px;
-}
-.Games-game .game2 .button-btn{
-    display: inline-block;
-    margin-top: 20px;
-    background-color:#97baee;
-    color:black;
-    padding: 15px 20px;
-    border: 2px solid white;
-    font-size: 20px;
-    border-radius: 20px;
-    width: 100px;
-    text-decoration: none;
-
-}
-.Games-game .game2 .button-btn:hover{
-    box-shadow: 10px 10px 10px rgb(18, 17, 17);
-    
-}
-
-
-#Games .Games-game{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-
-
-
-/* /////// */
-
-
-
-
-
-
-
-
+/* fourmulair */
 
 #fourmulair{
     margin: 0;
@@ -374,7 +285,82 @@ form .log-sub:hover{
     border: solid red;
 }
 
+/* Games */
 
+#Games{
+    margin-bottom: 100px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background:#97baee center center/cover fixed no-repeat;
+
+}
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 50px;
+}
+
+ h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:black;
+    font-style: italic;
+    text-shadow: 4px 4px 5px blue;
+}
+h2 span{
+    color: white;
+}
+ .title p{
+    color:black;
+    font-weight: 500;
+}
+.title p span{
+    color: white;
+}
+.Games-game .game1{
+    width: 300px;
+    height: 300px;
+    position: relative; 
+}
+.Games-game img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.Games-game .game2{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    border-radius: 15px;
+}
+.Games-game .game2 .button-btn{
+    display: inline-block;
+    margin-top: 20px;
+    background-color:#97baee;
+    color:black;
+    padding: 15px 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100px;
+    text-decoration: none;
+
+}
+.Games-game .game2 .button-btn:hover{
+    box-shadow: 10px 10px 10px rgb(18, 17, 17);
+    
+}
+
+
+#Games .Games-game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 
 /* gallery */
 
@@ -431,7 +417,7 @@ hr{
     width: 1100px;
     color: black;
 }
-/* Hover affect on social media icon */
+
 .socialIcons a:hover{
     background-color: #111;
     transition: 0.5s;
@@ -476,24 +462,8 @@ hr{
     font-weight: 400;
     margin: 0px 5px;
 }
-@media (max-width: 700px){
-    .footerNav ul{
-        flex-direction: column;
-    } 
-    .footerNav ul li{
-        width:100%;
-        text-align: center;
-        margin: 10px;
-    }
-    .socialIcons a{
-        padding: 8px;
-        margin: 4px;
-    }
-}
 
-
-
-
+ /* Responsive */
 
 @media screen and (max-width : 600px){
     .content-1{
@@ -534,6 +504,18 @@ hr{
     }
     #Games{
         height: 1200px;
+    }
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
     }
 
 }

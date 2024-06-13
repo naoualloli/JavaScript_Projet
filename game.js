@@ -1,29 +1,24 @@
-var btn=document.getElementsByClassName("btn");
-var gallery=document.getElementById("gallery");
-    var images = new Array(
-        "images/img10.jpg",
-        "images/img11.jpg",
-        "images/img12.jpg",
-        "images/img13.jpg"
-    );
+// js header
+  
+  var btn=document.getElementsByClassName("btn");
+  var gallery=document.getElementById("gallery");
+      var images = new Array(
+          "images/img10.jpg",
+          "images/img11.jpg",
+          "images/img12.jpg",
+          "images/img13.jpg"
+      );
 
-    for(let i=0 ;i<btn.length;i++){
-        btn[i].onclick = function(){
-            gallery.src = images[i];
-        };
-    }
+      for(let i=0 ;i<btn.length;i++){
+          btn[i].onclick = function(){
+              gallery.src = images[i];
+          };
+      }
 
 
- 
+//  js-fourmulair
     
 
-
-
-
-
-
-
-  //////////
   var signup_link = document.querySelector('.a1');
   var login_link = document.querySelector('.a2');
 
@@ -43,17 +38,15 @@ var gallery=document.getElementById("gallery");
     login_form.style.display = "block";
     signup_link.style.background = "#34495e";
     login_link.style.background = "#2981bc";
-  }
+  };
 
   function login_hide(){
     signup_form.style.display = "block";
     login_form.style.display = "none";
     signup_link.style.background = "#2981bc";
     login_link.style.background = "#34495e";
-  }
+  };
 
-
-  
 
   document.getElementById("submit").addEventListener("click",function(e){
     e.preventDefault();
@@ -107,9 +100,5 @@ var gallery=document.getElementById("gallery");
 
   });
 
-
-
-
-  ///////g
 
   
